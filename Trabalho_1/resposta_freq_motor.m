@@ -8,11 +8,13 @@ num = kt;
 den = [0 ke*kt ra*jm];
 
 H = tf(num,den)
+figure;
 step(H)
 fig_step=gcf;
 grid on;
 set(findall(fig_step,'-property','FontSize'),'FontSize',fontsize)
 
+figure;
 bode(H)
 fig_bode=gcf;
 grid on;
