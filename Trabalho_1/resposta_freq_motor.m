@@ -5,7 +5,7 @@ jm = 221e-7;
 la = 0.82e-3;
 ra = 10.6;
 num = kt;
-den = [0 ke*kt ra*jm];
+den = [ra*jm ke*kt];
 
 H = tf(num,den)
 figure;
